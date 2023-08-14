@@ -1,3 +1,4 @@
+package Refatorado;
 class Funcionario {
     private String nome;
     private String cargo;

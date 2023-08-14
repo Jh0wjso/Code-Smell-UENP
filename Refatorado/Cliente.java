@@ -1,3 +1,4 @@
+package Refatorado;
 class Cliente {
     private String nome;
 

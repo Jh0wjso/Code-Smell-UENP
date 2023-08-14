@@ -1,3 +1,4 @@
+package Refatorado;
 public class Locacao {
     private Cliente cliente;
     private Filme filme;

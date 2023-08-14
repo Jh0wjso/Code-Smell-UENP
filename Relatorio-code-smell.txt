@@ -1,0 +1,2 @@
+Refactoring Type	Source Entity	Target Class	Source/Target accessed members	Rate it!
+Move Method	br.es.Funcionario::registrarDevolucao(br.es.Devolucao):void	br.es.Devolucao	1/2	
