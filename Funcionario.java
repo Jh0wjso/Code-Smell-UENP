@@ -10,6 +10,16 @@ class Funcionario {
     public String getNome() {
         return nome;
     }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCaro() {
+        return cargo;
+    }
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
 
     public void registrarDevolucao(Devolucao devolucao) {
         Locacao locacao = devolucao.getLocacao();
