@@ -1,4 +1,5 @@
 package Refatorado;
+
 public class Devolucao {
     private Locacao locacao;
     private String dataDevolucao;

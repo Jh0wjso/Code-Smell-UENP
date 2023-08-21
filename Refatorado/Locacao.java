@@ -10,15 +10,34 @@ public class Locacao {
         this.dataLocacao = dataLocacao;
     }
 
-    public Cliente getCliente() {
-        return cliente;
+    public void imprimirInformacoes() {
+        System.out.println("Locação - Cliente: " + cliente.getNome() + " | Filme: " + filme.getTitulo() +
+                " | Data: " + dataLocacao);
     }
 
-    public Filme getFilme() {
-        return filme;
-    }
+	public Cliente getCliente() {
+		return cliente;
+	}
 
-    public String getDataLocacao() {
-        return dataLocacao;
-    }
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public Filme getFilme() {
+		return filme;
+	}
+
+	public void setFilme(Filme filme) {
+		this.filme = filme;
+	}
+
+	public String getDataLocacao() {
+		return dataLocacao;
+	}
+
+	public void setDataLocacao(String dataLocacao) {
+		this.dataLocacao = dataLocacao;
+	}
+    
+    
 }

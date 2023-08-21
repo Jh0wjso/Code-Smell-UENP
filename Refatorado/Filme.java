@@ -1,5 +1,8 @@
 package Refatorado;
+
 public class Filme {
+    private static final String FILME_PREFIX = "Filme \"";
+
     private String titulo;
     private int ano;
     private boolean disponivel;
@@ -18,6 +21,10 @@ public class Filme {
         return ano;
     }
 
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
     public boolean isDisponivel() {
         return disponivel;
     }
@@ -25,18 +32,28 @@ public class Filme {
     public void alugar() {
         if (disponivel) {
             disponivel = false;
-            System.out.println("Filme \"" + titulo + "\" alugado.");
+            System.out.println(FILME_PREFIX + titulo + "\" alugado.");
         } else {
-            System.out.println("Filme \"" + titulo + "\" não está disponível para aluguel.");
+            System.out.println(FILME_PREFIX + titulo + "\" não está disponível para aluguel.");
         }
     }
 
     public void devolver() {
         if (!disponivel) {
             disponivel = true;
-            System.out.println("Filme \"" + titulo + "\" devolvido.");
+            System.out.println(FILME_PREFIX + titulo + "\" devolvido.");
         } else {
-            System.out.println("O filme \"" + titulo + "\" já estava disponível.");
+            System.out.println("O " + FILME_PREFIX + titulo + "\" já estava disponível.");
+        }
+    }
+
+    public void alugarParaCliente(Cliente cliente, String dataLocacao) {
+        if (disponivel) {
+            disponivel = false;
+            System.out.println(FILME_PREFIX + titulo + "\" alugado para o cliente " + cliente.getNome() +
+                    " em " + dataLocacao);
+        } else {
+            System.out.println(FILME_PREFIX + titulo + "\" não está disponível para aluguel.");
         }
     }
 }

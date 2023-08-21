@@ -6,25 +6,32 @@ class Funcionario {
     public Funcionario(String nome, String cargo) {
         this.nome = nome;
         this.cargo = cargo;
-    }
+    }    
 
     public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+		return nome;
+	}
 
-    public String getCaro() {
-        return cargo;
-    }
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
-    }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
-    public void registrarDevolucao(Devolucao devolucao) {
+	public String getCargo() {
+		return cargo;
+	}
+
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
+
+	public void registrarDevolucao(Devolucao devolucao) {
         Locacao locacao = devolucao.getLocacao();
         System.out.println("Devolução registrada por " + nome + " - Filme: " + locacao.getFilme().getTitulo() +
                 " - Cliente: " + locacao.getCliente().getNome() + " - Data de Devolução: " + devolucao.getDataDevolucao());
+    }
+    
+    public void registrarFuncionario(String nome, String cargo) {
+    	this.nome = nome;
+		this.cargo = cargo;
     }
 }
