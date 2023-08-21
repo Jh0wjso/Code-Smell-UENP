@@ -4,13 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SistemaLocadora {
-    
-    private SistemaLocadora() {
-        // Private constructor to prevent instantiation
-    }
-
-    public static void iniciarSistema() {
-        Filme filme1 = new Filme("Filme 1", 2000);
+	
+	public static void iniciarSistema() {
+		Filme filme1 = new Filme("Filme 1", 2000);
         Filme filme2 = new Filme("Filme 2", 2010);
 
         Cliente cliente1 = new Cliente("Cliente 1");
@@ -33,5 +29,6 @@ public class SistemaLocadora {
         List<Devolucao> devolucoes = new ArrayList<>();
         devolucoes.add(devolucao1);
         relatorio.gerarRelatorioDevolucoes(devolucoes);
-    }
+	}
+	
 }
