@@ -1,4 +1,4 @@
-package Final;
+package FinalRefactor;
 class Funcionario {
     private String nome;
     private String cargo;

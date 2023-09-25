@@ -1,4 +1,4 @@
-package Final;
+package br.es;
 public class Locacao {
     private Cliente cliente;
     private Filme filme;
